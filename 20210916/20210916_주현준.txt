@@ -1,0 +1,54 @@
+2-1.
+             1byte	 2byte	 4byte 	8byte
+논리형   boolean
+문자형                    char
+정수형     byte         short        int        long
+실수형                                 float      double
+
+2-2.
+long regNo = 9508101673914L;
+
+2-3.
+- 리터럴 : 100, 100L, 3.14f
+- 변수 : i, l
+- 키워드 : int, long, final, float
+- 상수 : PI
+
+2-4.
+b
+
+2-5.
+12
+true
+131
+51
+99
+Java
+오류
+
+2-6.
+b, c, d, e
+
+2-7.
+a, d, h -> a d e g
+
+2-8.
+a, d
+
+2-9.
+d, e
+
+2-10.
+0 ~ 65535
+
+2-11.
+a, b, c, d
+
+2-12.
+a -> a b c e
+
+2-13.
+c -> c e f
+
+
+

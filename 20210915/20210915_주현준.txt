@@ -1,0 +1,53 @@
+java, c - 컴파일 언어
+1. 소스파일 -> .java(.c)
+2. 컴파일(java - jit, c - gcc)
+3. 실행파일 -> .class(java) - 바이트 코드, .exe(c) -기계어 코드
+4. 실행
+5. .class같은 경우 기계어 코드가 아니기 대문에 JVM(바이트코드 실행기)으로 실행된다.
+
+JRE(java runtime env) : JVM + API
+JDK : JRE + 개발 Tools
+
+=> 작업 과정
+1) 소스 파일 작성(*.java)
+- java 파일 형식
+class 파일이름 {   
+ }
+2) 컴파일 작업 : javac *.java => *.class
+3) 실행 : java * => 실행파일의 이름만
+
+* 객체지향언어
+Java, C++ 등 -> 유지보수성이 높음
+
+* JVM
+1. class loader
+2. 유효성 검사
+3. 머신코드(기계언어) 변환
+4. 실행
+=> oracleJDK, openJDK
+
+- SE(윈도우 프로그램) : 독자적 실행(stand alone 방식)
+- EE(웹 서버)
+- ME(모바일)
+
+-----------------------------------------------------------------------
+자바 인코딩 문제
+상단 window 탭 클릭 - preferences - content types - text - 아래 default encoding에 euc-kr 입력 - Update 버튼 클릭
+-----------------------------------------------------------------------
+
+chapter2. 변수와 자료형
+
+- 변수 저장 방법
+1. 메모리 저장 : 변수 선언(메모리 공간 확보, 타입 이름)
+2. 파일 저장
+3. DB 저장
+
+- 변수 초기화
+변수에 최초로 값을 저장하는 것
+
+- 변수 타입(8개, 키워드(예약어))
+byte short int long : 숫자(정수)
+float double : 숫자(실수)
+char : 문자
+boolean : 논리
+
