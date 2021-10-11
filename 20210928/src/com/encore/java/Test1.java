@@ -1,7 +1,7 @@
 package com.encore.java; // 패키지화
 
 import edu.*;
-import com.encore.python.*;
+import com.encore.python.Test2;
 import com.encore.python.web.*;
 
 public class Test1 {

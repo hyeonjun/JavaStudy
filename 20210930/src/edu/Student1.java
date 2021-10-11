@@ -1,23 +1,23 @@
 package edu;
 
-public class Student {
+public class Student1 {
 	String stdId;
 	String name;
 	String major;
 	
-	public Student() {
+	public Student1() {
 		this("00000000");
 	}
 	
-	public Student(String stdId) {
+	public Student1(String stdId) {
 		this(stdId, "Anonymous");
 	}
 	
-	public Student(String stdId, String name) {
+	public Student1(String stdId, String name) {
 		this(stdId, name, "미정");
 	}
 	
-	public Student(String stdId, String name, String major) {
+	public Student1(String stdId, String name, String major) {
 		this.stdId = stdId;
 		this.name = name;
 		this.major = major;
@@ -29,13 +29,13 @@ public class Student {
 	
 	public static void main(String[] args) {
 		// 입력값 없는 경우 학번="00000000", 이름="Anonymous",  전공="미정"
-		Student s1 = new Student();
+		Student1 s1 = new Student1();
 		s1.getInfo();
-		Student s2 = new Student("2014958119");
+		Student1 s2 = new Student1("2014958119");
 		s2.getInfo();
-		Student s3 = new Student("2014958120", "홍길동");
+		Student1 s3 = new Student1("2014958120", "홍길동");
 		s3.getInfo();
-		Student s4 = new Student("2014958121", "이순신", "컴퓨터공학");
+		Student1 s4 = new Student1("2014958121", "이순신", "컴퓨터공학");
 		s4.getInfo();
 	}
 }

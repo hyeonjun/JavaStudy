@@ -6,7 +6,7 @@ public class Test3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Vector<String> vec = new Vector<String>();
+		Vector<String> vec = new Vector<String>(); // 동기화되어 있는 리스트
 		System.out.println(vec.size());
 		vec.addElement("서울");
 		vec.addElement("도쿄");
