@@ -1,0 +1,23 @@
+JDBC Progamming
+
+1. JDBC Driver 로딩
+  Class.forName("Driver 인터페이스를 구현한 클래스명"); //"oracle.jdbc.driver.OracleDriver"
+
+2. DB 서버 접속
+  String url = "jdbc:oracle:thin:@localhost:1521:xe"; // localhost 오프라인에서 하는 것
+  String url = "jdbc:oracle:thin:@127.0.0.1:1521:xe"; // 현재 내 컴퓨터
+  String url = "jdbc:oracle:thin:@192.168.45.100:1521:xe"; // 내 컴퓨터 IP주소
+  Connection conn = DriverManager.getConnection(url, "hr", "hr");
+
+3. Statement/PreparedStatement 객체 생성
+  Statement st = conn.createStatement();
+  PreparedStatement pst = conn.preparedStatement(SQL문); // "insert into test values(?, ?);
+  pst.setString(?의 index, 값); // pst.setString(1, id); pst.setString(2, pwd);
+
+4. SQL문 실행
+  ResultSet rs = st.executeQuery(sql);  // select
+  int executeUpdate(sql); // insert, update, delete, create 등
+5. 자원해제
+  if(rs!=null) rs.close();
+  if(st!=null) st.close();
+  if(conn!=null) conn.close();
