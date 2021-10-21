@@ -20,7 +20,9 @@ public class MemberVO {
 	
 	@Override
 	public String toString() {
-		return "MemberVO [id=" + id + ", passwd=" + passwd + ", name=" + name + ", mail=" + mail + "]";
+//		return "MemberVO [id=" + id + ", passwd=" + passwd + ", name=" + name + ", mail=" + mail + "]";
+		return id+"\t"+passwd+"\t"+name+"\t"+mail;
+		
 	}
 
 	public String getId() {
