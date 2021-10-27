@@ -5,45 +5,40 @@
 	<title>Employee</title>
 	<script src="./js/employee.js"></script>
 	<script>
-		var btn1, btn2, btn3, btn4, result, table;
+		var emp_table, tagHeader, result, tags, rows, btn;
 		// var header = "";
 		function init(){
-			btn1 = document.querySelector("#btn1");
-			btn2 = document.querySelector("#btn2");
-			btn3 = document.querySelector("#btn3");
-			btn4 = document.querySelector("#btn4");
+			emp_table = document.querySelector("#emp_table");
+			tagHeader = "<tr><th>나이</th><th>이름</th><th>연락처</th><th>성별</th><th>부서</th><th>급여</th><th>근무지</th></tr>";
 			result = document.querySelector("#result");
-			table = document.querySelector("#tbl");
+			rows = employee_data.length;
 		}
 		
-		function load_data(){ 
-			result.innerHTML = btn1.innerHTML;
-			btn1.disabled = "disabled";
-			btn2.disabled = "";
-			btn3.disabled = "";
-			btn4.disabled = "";
-			var tag = "<tr><th>나이</th><th>이름</th><th>전화번호</th><th>성별</th><th>직무</th><th>급여</th><th>국적</th></tr>";
-			for(var i=0; i<employee_data.length; i++){
-				tag += "<tr>";
-				tag += "<th>"+employee_data[i].age+"</th>";
-				tag += "<th>"+employee_data[i].name+"</th>";
-				tag += "<th>"+employee_data[i].phone+"</th>";
-				tag += "<th>"+employee_data[i].gender+"</th>";
-				tag += "<th>"+employee_data[i].job+"</th>";
-				tag += "<th>"+employee_data[i].pay+"</th>";
-				tag += "<th>"+employee_data[i].code+"</th>";
-				tag += "</tr>";
+		function load_data(){
+			tags = tagHeader;
+			for(var i=0; i<rows; i++){
+				tags += "<tr>";
+				tags += "<th>"+employee_data[i].age+"</th>";
+				tags += "<th>"+employee_data[i].name+"</th>";
+				tags += "<th>"+employee_data[i].phone+"</th>";
+				tags += "<th>"+employee_data[i].gender+"</th>";
+				tags += "<th>"+employee_data[i].job+"</th>";
+				tags += "<th>"+employee_data[i].pay+"</th>";
+				tags += "<th>"+employee_data[i].code+"</th>";
+				tags += "</tr>";
 			}
-			table.innerHTML = tag;
+			
+			emp_table.innerHTML = tags;
+			if (btn != undefined){
+				btn.disabled="";
+			}
+			btn = document.querySelector("#btn1");
+			result.innerHTML = btn.innerHTML + " : 데이터가 성공적으로 로드되었습니다.";
+			btn.disabled="disabled";
 			
 		}
 		
 		function avg_age(){
-			
-			btn1.disabled = "";
-			btn2.disabled = "disabled";
-			btn3.disabled = "";
-			btn4.disabled = "";
 			var ml_age=0, dl_age=0, ml_cnt=0, dl_cnt=0;
 			for(var i=0; i<employee_data.length; i++){
 				if(employee_data[i].job === "ML"){
@@ -57,18 +52,14 @@
 			
 			var ml_avg = ml_age / ml_cnt;
 			var dl_avg = dl_age / dl_cnt;
-			result.innerHTML = btn2.innerHTML+" : <br/>"+Math.round(Math.abs(ml_avg-dl_avg) * 100) / 100+"세";
 			
-			
+			btn.disabled= "";
+			btn = document.querySelector("#btn2");
+			result.innerHTML = btn.innerHTML+" : <br/>"+Math.round(Math.abs(ml_avg-dl_avg) * 100) / 100+"세";
+			btn.disabled = "disabled";
 		}
 		
 		function avg_man_sal(){
-			result.innerHTML = btn3.innerHTML;
-			btn1.disabled = "";
-			btn2.disabled = "";
-			btn3.disabled = "disabled";
-			btn4.disabled = "";
-			
 			var man_cnt=0, man_sal=0;
 			for(var i=0; i<employee_data.length; i++){
 				if(employee_data[i].gender === "M"){
@@ -77,16 +68,14 @@
 				}
 			} 
 			var age_sal = man_sal / man_cnt;
-			result.innerHTML = btn3.innerHTML+" : <br/>"+Math.round(age_sal * 100) / 100;
+			
+			btn.disabled= "";
+			btn = document.querySelector("#btn3");
+			result.innerHTML = btn.innerHTML+" : <br/>"+Math.round(age_sal * 100) / 100;
+			btn.disabled = "disabled";
 		}
 		
 		function avg_sal(){
-			result.innerHTML = btn4.innerHTML;
-			btn1.disabled = "";
-			btn2.disabled = "";
-			btn3.disabled = "";
-			btn4.disabled = "disabled";
-			
 			var do_cnt=0, do_sal=0, ov_cnt=0, ov_sal=0;
 			for(var i=0; i<employee_data.length; i++){
 				if(employee_data[i].code === "KR"){
@@ -97,9 +86,14 @@
 					ov_cnt++;
 				}
 			}
+
 			var do_avg = do_sal / do_cnt;
 			var ov_avg = ov_sal / ov_cnt;
-			result.innerHTML = btn3.innerHTML+" : <br/>"+Math.round(Math.abs(do_avg - ov_avg) * 100) / 100;
+			
+			btn.disabled= "";
+			btn = document.querySelector("#btn4");
+			result.innerHTML = btn.innerHTML+" : <br/>"+Math.round(Math.abs(do_avg - ov_avg) * 100) / 100;
+			btn.disabled = "disabled";
 		}
 	
 	</script>
@@ -124,6 +118,6 @@
 		<div id="result" style="background:orange; color:white; font-weight:bold; font-style:italic">결과 값 출력</div>
 	<hr>
 	<h3>사원 목록</h3>
-	<table id='tbl' border="/"></table>
+	<table id='emp_table' border="/"></table>
 </body>
 </html>
