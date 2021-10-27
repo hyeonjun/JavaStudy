@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>NewsData</title>
+	<link rel="stylesheet" href="./css/news.css">
+	<script src="./js/newsdata.js"></script>
+	<script>
+		var idx = 0;
+		var pages = Math.ceil(newsStandArr.length / 24); // 총 페이지 수
+		function init(){
+			display();
+			var btn = document.querySelector(".btn_p");
+			btn.style.display = 'none';
+		}
+		
+		function display(){
+			var table = document.querySelector("#tbl");
+			var r=4, c=6;
+			var tag = "";
+			for(var i=0; i<r; i++){
+				tag += "<tr>";
+				for(var j=0; j<c; j++){
+					if (newsStandArr[(i+(idx*r))*c+j] != null){
+						var url = newsStandArr[(i+(idx*r))*c+j].u;
+						var img = "./newsImages/"+newsStandArr[(i+(idx*r))*c+j].img;
+					} else {
+						var url = "";
+						var img = "";
+					}
+					tag += "<td><a href= '"+url+"' >";
+					tag += "<img src= '"+img+"' />";
+					tag += "</a></td>";
+				}
+				tag += boo"</tr>";
+			}
+			table.innerHTML = tag;
+		}
+		
+		function next(){
+			if (idx < 1){
+				var btn = document.querySelector(".btn_p");
+				btn.style.display = 'inline-block';
+			}
+			idx += 1;
+			display();
+			if (idx > pages-2){
+				var btn = document.querySelector(".btn_n");
+				btn.style.display = 'none';
+			}
+		}
+		
+		function prev(){
+			if (idx > pages-2){
+				var btn = document.querySelector(".btn_n");
+				btn.style.display = 'inline-block';
+			}
+			idx -= 1;
+			display();
+			if (idx < 1){
+				var btn = document.querySelector(".btn_p");
+				btn.style.display = 'none';
+			}
+		}
+		
+	</script>
+</head>
+<body onload="init()">
+	<table id="tbl"></table>
+	<div id="left">
+		<button class="btn_p" onclick="prev()">이전</button>
+	</div>
+	<div id="right">
+		<button class="btn_n" onclick="next()">다음</button>
+	</div>
+</body>
+</html>

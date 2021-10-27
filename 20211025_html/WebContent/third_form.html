@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form Tag</title>
+</head>
+<body>
+	<form action="index.html" method="get"> <br />
+		<fieldset>
+		<legend>회원가입</legend>
+		<ul>
+			<li>아이디 : <input type="text" name="id" placeholder="영숫자 8자리" /></li>
+			<li>비밀번호 : <input type="password" name="pw" required="required" /> </li>
+			<li>이메일 : <input type="email" name="mail" required="required" value="guest@g.g"readonly="readonly" /> </li>
+			<li>웹 주소 : <input type="url" name="url" required="required" /> </li>
+			<li>수량 : <input type="number" name="num" min="1" max="10" step="1" /> </li>
+			<li>가격 : <input type="range" name="ran" min="1" max="10" step="1" /> </li>
+			<li>색상 : <input type="color" name="clr" /> </li>
+		</ul>
+		</fieldset>
+		<br />
+		<fieldset>
+		<legend>설문지</legend>
+			<input type="radio" name="group" />Java <br /> <input type="radio"
+				name="group" />html <br /> <input type="radio" name="group" />spring
+			<br />
+			<br /> <input type="checkbox" name="c1" />영상처리 <br /> <input
+				type="checkbox" name="c2" />이미지처리 <br /> <input type="checkbox"
+				name="c3" />텍스트 학습 <br />
+			<br />
+		</fieldset>
+		<br />
+		<fieldset>
+		<legend>날짜</legend>
+			<textarea rows="5" cols="100" required="required">기본값 설정</textarea>
+			<br /> <input type="date" /> <br /> <input type="time" /> <br /> <input
+				type="datetime" /> <br /> <br />
+		</fieldset>
+		<br />
+		<input type="submit"/> 
+		<input type="reset"/>
+	
+	
+	
+	
+	
+	</form>
+
+
+
+
+
+</body>
+</html>

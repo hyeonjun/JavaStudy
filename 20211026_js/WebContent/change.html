@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>change-color</title>
+	<link rel="stylesheet" href="./css/change-color.css">
+
+</head>
+
+<body>
+	<h1 id="heading">자바스크립트</h1>
+	<p id="text">위 텍스트를 클리하면 색이 변합니다.</p>
+<!-- <script src="./js/change_js.js"></script>  -->	
+	<script>
+		var heading = document.querySelector("#heading");
+		// document : <body> ~ </body> 사이의 태그들
+		// querySelect() : 태그(요소)를 검색하여 찾아내는 함수
+		heading.onclick = function(){
+			if (heading.style.color == "red"){
+				heading.style.color = "blue";
+			} else {
+				heading.style.color = "red";
+			}
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>age.html</title>
+	<link rel="stylesheet" href="./css/age.css">
+	<script>
+		function calc(){
+			var currentYear = 2021;
+			var birthYear = 1995;
+			var age = currentYear - birthYear + 1;
+			document.querySelector("#result").innerHTML = "나이 : "+age;
+		}
+	
+	</script>
+</head>
+<body>
+	<!-- <input type="button" value="버튼"/>  -->
+	<button class="btn" onclick="calc()">나이 계산</button>
+	<div id="result" class="show">(결과 출력)</div>
+	
+	
+</body>
+</html>

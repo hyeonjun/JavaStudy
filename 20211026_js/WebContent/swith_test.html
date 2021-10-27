@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>swith_test.html</title>
+</head>
+<body>
+	<script>
+		var session = prompt("관심 세션을 선택해주세요. 1.마케팅 2.개발 3.딥러닝 (예: 1)");
+		switch(session){
+		case "1": {
+			document.write("마케팅 세션은 <strong>201호</strong>입니다.");
+		}break;
+		
+		case "2": {
+			document.write("개발 세션은 <strong>202호</strong>입니다.");
+		}break;
+		
+		case "3": {
+			document.write("딥러닝 세션은 <strong>203호</strong>입니다.");
+		}break;
+		
+		default:
+			alert("잘못 입력하셨습니다.")
+		}
+	
+	</script>
+
+</body>
+</html>

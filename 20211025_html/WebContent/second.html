@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Second - form 태그</title>
+</head>
+<body>
+	<!-- 데이터 전달 - form
+	사용자 입력 태그들
+	
+	서버 전송 전용 버튼 태그들
+	 -->
+	 <!-- index.html로 전송 -->
+	 <!-- method="post"를 하면 post방식으로 전송하면 전송하는 데이터가 안보임. - 안전성 -->
+	 <!-- 하지만 post 방식을 하면 한글이 깨진다. 그래서 받는 쪽에서 한글 깨짐 방지 코드를 넣어야함  -->
+	 <form action="index.html" method="post"> 
+	 	<!-- 한줄짜리 입력창 - text -->
+	 	id: <input type="text" name="id" />
+	 	<!-- password의 경우 따로 타입이 존재함 -->
+	 	pw: <input type="password" name="pw" />
+	 	<!-- 일괄적으로 데이터를 전송시켜줌 -->
+	 	<!-- http://localhost:9000/20211025/second.html?id=fdsafsd&pw=123123 -->
+	 	<!-- http => 하이퍼문서(HTML) 전송에 의한 프로토콜 -->
+	 	<!-- localhost => 웹 서버 기본폴더 위치 (WebContent 폴더) -->
+	 	<!-- 9000 => 소프트웨어가 외부와 통신(데이터)하기 위한 포트번호 -->
+	 	<!-- 20211025 => 프로젝트명, second.html => 문서 -->
+	 	<!-- second.html? => ? 의미 앞까지는 전송대상 / 뒤부터는 대상에 전달할 값 -->
+	 	<!-- id=fdsafsd => id= 는 input 태그에 선언된 파라미터명(name="id"), fdsafsd => 사용자 입력닶 -->
+	 	<!-- & => 파라미터명 구별 -->
+	 	<input type="submit" value="전송" />
+		<!-- 전송 취소 - reset -->
+		<input type="reset" value="취소" />
+	 </form>
+</body>
+</html>
+
+<!-- 프로토콜 : http / https 보안 / ftp : 파일 전송프로토콜  -->

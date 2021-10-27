@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>if_test.html</title>
+</head>
+<body>
+	<div id="result">결과 출력</div>
+	
+	<script>
+		var userNumber = prompt("숫자 두 개를 띄어쓰기로 구분하여 입력해주세요.(예: 50 2)").split(" ");
+		var display = document.querySelector("#result");
+		
+		if (userNumber[0] != null){
+			if(userNumber[0] % userNumber[1] == 0){
+				display.innerHTML = userNumber[0] + "는 "+ userNumber[1]+"의 배수입니다.";
+			} else {
+				display.innerHTML = userNumber[0] + "는 "+ userNumber[1]+"의 배수가 아닙니다.";
+			}
+		} else {
+			alert("입력이 취소되었습니다.");
+		}
+	
+	
+	</script>
+</body>
+</html>

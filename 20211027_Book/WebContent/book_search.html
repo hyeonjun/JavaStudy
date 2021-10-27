@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Book Search</title>
+	<link rel="stylesheet" href="./css/book.css">
+	<script src="./js/books.js"></script>
+	<script>
+		function init() {
+			display()
+		}
+		
+		function display() {
+			var book = document.querySelector("#books");
+			var tag = "<tr><th>책 표지</th><th>제목</th><th>저자</th><th>출판사</th><th>정가</th><th>할인율(%)</th></tr>";
+			for (var i=0; i<bookArray.length; i++){
+				tag += "<tr class='item'>";
+				tag += "<th><img src='./book_images/"+bookArray[i].img+"' /></th>";
+				tag += "<th>"+bookArray[i].t+"</th>";
+				tag += "<th class='name'>"+bookArray[i].n+"</th>";
+				tag += "<th>"+bookArray[i].p+"</th>";
+				tag += "<th>"+bookArray[i].pr+"</th>";
+				tag += "<th>"+bookArray[i].dc+"%</th>";
+				tag += "</tr>";
+			}
+			book.innerHTML = tag;
+		}
+		
+		function filter() {
+			var value, item, name;
+			value = document.querySelector("#search_bar").value;
+			item = document.getElementsByClassName("item");
+			for (var i=0; i<item.length;i++){
+				name = item[i].getElementsByClassName("name");
+				if (name[0].innerHTML.indexOf(value) > -1){
+					item[i].style.display = 'table-row';
+				} else{
+					item[i].style.display = 'none';
+				}
+			}
+		}
+		
+		function search(){
+			var value = document.querySelector('#search_bar');
+			var target = value.value;
+			var book = document.querySelector("#books");
+			var tag = "<tr><th>책 표지</th><th>제목</th><th>저자</th><th>출판사</th><th>정가</th><th>할인율(%)</th></tr>";
+			var cnt = 0;
+			for (var i=0; i<bookArray.length; i++){
+				if (bookArray[i].n === target){
+					tag += "<tr class='item'>";
+					tag += "<th><img src='./book_images/"+bookArray[i].img+"' /></th>";
+					tag += "<th>"+bookArray[i].t+"</th>";
+					tag += "<th class='name'>"+bookArray[i].n+"</th>";
+					tag += "<th>"+bookArray[i].p+"</th>";
+					tag += "<th>"+bookArray[i].pr+"</th>";
+					tag += "<th>"+bookArray[i].dc+"%</th>";
+					tag += "</tr>";
+					cnt++;
+				}
+			}
+			if (cnt > 0){
+				value.value = "";
+				book.innerHTML = tag;
+			} else{
+				value.value = "";
+				book.innerHTML = tag + "<tr><td colspan='6'>검색 결과가 없습니다.</td></tr>";
+			}
+		}
+	</script>
+</head>
+
+<body onload="init()">
+	<div>
+		<input type="text" id="search_bar" placeholder="저자 이름을 입력하세요(반응형)" onkeyup="filter()">
+		<input type="text" id="search_bar" placeholder="저자 이름을 입력하세요">
+		<button id="select_btn" onClick="search()">Search</button>
+	</div>
+	<div>
+		<table id="books">
+			<tr>
+				<th>책 표지</th> <!-- 책 제목 -->
+				<th>제목</th>
+				<th>저자</th>
+				<th>출판사</th>
+				<th>정가</th>
+				<th>할인율(%)</th>
+			</tr>
+		</table>
+	</div>
+	
+</body>
+</html>

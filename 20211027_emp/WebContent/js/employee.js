@@ -1,0 +1,36 @@
+/**
+ *  employee.js
+ */
+var employee_data=[
+{age:44, name:"오성훈", phone:"010-7730-4737", gender:"M", job:"java", pay:200, code:"US"},
+{age:34, name:"정동욱", phone:"010-9679-5257", gender:"M", job:"java",  pay:200, code:"FR"},
+{age:28, name:"안정환", phone:"010-9962-4536", gender:"M", job:"python", pay:250, code:"JP"},
+{age:26, name:"한성탁", phone:"010-4617-0975", gender:"M", job:"ML",  pay:300, code:"US"},
+{age:29, name:"황태욱", phone:"011-895-7892", gender:"M", job:"python",  pay:300, code:"CN"},
+{age:28, name:"임원석", phone:"010-6201-6976", gender:"M", job:"java",  pay:200, code:"DE"},
+{age:27, name:"이상덕", phone:"010-9492-6059", gender:"M", job:"DL",  pay:350, code:"KR"},
+{age:29, name:"윤지홍", phone:"010-4245-0105", gender:"M", job:"java",  pay:200, code:"JP"},
+{age:29, name:"정석원", phone:"010-6243-4849", gender:"M", job:"python",  pay:400, code:"DE"},
+{age:32, name:"이경오", phone:"010-4517-1609", gender:"M", job:"ML",  pay:440, code:"KR"},
+{age:23, name:"오은지", phone:"010-3470-5204", gender:"F",  job:"java", pay:340, code:"FR"},
+{age:30, name:"안은경", phone:"010-4311-2563", gender:"F", job:"python",  pay:250, code:"JP"},
+{age:30, name:"이상배", phone:"010-5131-9058", gender:"M", job:"ML",  pay:220, code:"KR"},
+{age:28, name:"조영동", phone:"010-6515-4454", gender:"M", job:"python",  pay:270, code:"FR"},
+{age:31, name:"김윤기", phone:"010-8565-1746", gender:"M", job:"java",  pay:330, code:"CN"},
+{age:26, name:"장한샘", phone:"010-4875-0827", gender:"M", job:"DL",  pay:430, code:"US"},
+{age:33, name:"김지훈", phone:"010-2034-3054", gender:"M", job:"java",  pay:220, code:"US"},
+{age:30, name:"김철호", phone:"010-9180-4710", gender:"M", job:"ML",  pay:510, code:"CN"},
+{age:28, name:"이승철", phone:"011-473-8512", gender:"M", job:"python",  pay:640, code:"JP"},
+{age:27, name:"윤수연", phone:"010-3062-2557", gender:"F", job:"DL",  pay:320, code:"KR"},
+{age:33, name:"박유선", phone:"010-3037-1174", gender:"F", job:"java",  pay:280, code:"DE"},
+{age:31, name:"이혁성", phone:"010-8743-0995", gender:"M", job:"ML",  pay:290, code:"US"},
+{age:32, name:"문경곤", phone:"010-5634-5664", gender:"M", job:"python",  pay:310, code:"US"},
+{age:35, name:"김병률", phone:"010-4220-5355", gender:"M", job:"ML",  pay:410, code:"KR"},
+{age:35, name:"김태환", phone:"010-2211-3901", gender:"M", job:"java",  pay:500, code:"FR"},
+{age:25, name:"곽진영", phone:"010-9190-2303", gender:"F", job:"DL",  pay:370, code:"KR"},
+{age:33, name:"조영석", phone:"010-5277-4620", gender:"M", job:"java",  pay:290, code:"JP"},
+{age:34, name:"조요환", phone:"010-3013-1022", gender:"M", job:"ML",  pay:405, code:"CN"},
+{age:28, name:"김동현", phone:"010-9977-9804", gender:"M", job:"python",  pay:440, code:"DE"},
+{age:28, name:"정대현", phone:"010-4564-7145", gender:"M", job:"ML",  pay:530, code:"KR"},
+{age:27, name:"박지혜", phone:"010-8562-0537", gender:"F", job:"DL",  pay:460, code:"JP"}
+];

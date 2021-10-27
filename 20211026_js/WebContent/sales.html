@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>sales.html</title>
+	<link rel="stylesheet" href="./css/bargain.css">
+	<script>
+		function showPrice() {
+			var pariceTag = document.querySelector("#oPrice");
+			var rateTag = document.querySelector("#rate");
+			var oPrice = pariceTag.value;
+			var rate = rateTag.value;
+			pariceTag.value = "";
+			rateTag.value = "";
+			// alert(oPrice + " : " + rate);
+			document.querySelector("#result").innerHTML = "원래 가격 : " + oPrice + "원 할인된 금액 : " + oPrice * ((100 - rate)/100)+"원 입니다."; 
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<img src="./images/sale.png">
+		<ul>
+			<li>
+				<label>원래 가격</label>
+				<input type="text" id="oPrice"/>
+			</li>
+			<li>
+				<label>할인율</label>
+				<input type="text" id="rate"/>%
+			</li>
+			<li>
+				<button onclick="showPrice()">할인 가격 계산 버튼</button>
+			</li>
+		</ul>
+	</div>
+	<div id="result">(할인 가격)</div>
+</body>
+</html>
