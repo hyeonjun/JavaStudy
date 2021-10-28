@@ -1,0 +1,214 @@
+* 웹 프로그래밍이란?
+
+1. 웹어플리케이션을 구현하는 행위
+2. 웹어플리케이션 -> 웹을 기반으로 작동되는 프로그램
+3. 웹 -> 1개 이상의 사이트가 연결되어 있는 인터넷 서비스의 한가지 형태
+4. 인터넷 -> 1개 이상의 네트워크가 연결되어 있는 형태
+
+- 프로토콜(Protocol) : 네트워크 상에서 약속한 통신규약(Http, FTP, SMTP, POP, DHCP)
+- IP : 네트워크 상에서 컴퓨터를 식별할 수 있는 주소
+- DNS : IP주소를 인간이 쉽게 외우도록 매핑한 문자열
+- Port : IP주소가 컴퓨터를 식별할 수 있게 해준다면, Port는 해당 컴퓨터의 구동되고 있는 프로그램을 구분할 수 잇는 번호
+
+=================================================================
+
+Java웹 : JAVA플랫폼(J2SE, J2EE, J2ME) 중에서 J2EE를 이용한 웹프로그래밍
+		J2SE - Standard Edition, 일반 자바 개발, 데스크탑 애플리케이션 
+		J2EE - Enterprise Edition, 웹용 자바 개발
+		J2ME - Mobile Edition, 과거 블랙베리 / 구 안드로이드
+=================================================================
+
+사용자(웹 브라우저) => 요청 (request) => 웹 서버 => 웹 어플리케이션 서버 => 데이터베이스
+			  <= 응답 (response)<=      <=              <=
+
+웹 서버 : Tomcat
+웹 어플리케이션 서버 : 프로젝트
+데이터베이스 서버 : 오라클
+
+프로젝트 => 데이터를 요청 => JDBC => 오라클
+					 java(~~.jar)
+					 : 접속 방법 (예외처리 코드 필요 -> try {} catch(SQLException e){} finally{})
+					 Class.forName("~~~"); -> ClassNotFoundException
+					 
+					 [SQLException]
+					 Connection conn = DriverManager.getConnection("접속URL", "사용자 계정", "비밀번호");
+					 Statement st = conn.createStatement();
+					 Result rs = st.executeQuery(SQL(select ~));
+					 st.executeUpdate(SQL(insert/update/delete));
+					 
+					 PreparedStatement pst = conn.prepareStatement(SQL);
+					 Result rs = pst.executeQuery();
+					 pst.executeUpdate();
+					 
+=================================================================
+
+Java : jsp(front-end), servlet(back-end) / EL, jstl
+html : front-end
+javascript : front-end
+css : front-end
+=================================================================
+
+Java : JDK / JRE
+Tomcat
+Oracle
+
+=================================================================
+
+* JSP
+문법:
+1. <%@ %> : 지시자 => 페이지에 대한 전반적인 설정 page / taglib
+2. <%-- --%> : JSP의 주석
+3. <%! %> : 변수 / 메서드 선언
+4. <%= %> : 결과값을 웁 브라우저 화면에 바로 출력 => 변수의 값, 간단한 연산 결과 값, 메서드 실행 결과 값
+5. <% %> : 여러 줄에 걸쳐서 자바 코드 실행
+6. 액션 태그 : JSP를 마치 HTML 태그 형태로 사용할 경우 <jsp:action명></jsp:action명>
+
+- 실행 과정
+최초 요청 시 : 웹 브라우저 request => jsp => java => class => 실행 결과 => 웹 브라우저에게 response
+재 요청 시 : 웹 브라우저 request => jsp => 실행 결과 => 웹 브라우정게 response
+
+- 내장 객체 
+입출력 : request / response / out
+서블릿 객체 : page / config
+세션 객체 : session
+예외 객체 : exception
+
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ %> : 웹 페이지 전체에 대한 환경 등을 설정할 때 사용
+page : 환경 설정
+language="java" : 이 페이지 내부에서 사용되는 언어="java"
+contentType="text/html; charset=UTF-8"
+ => 이 웹페이지는 text 기반 html로 구성
+ => charset : 인코딩
+
+pageEncoding="UTF-8"
+ => 이 페이지에 대한 입출력 인코딩 방식
+
+외부 라이브러리의 클래스를 사용할 경우
+<%@ page import="패키지 구조.클래스명" %>
+<%@ page import="패키지 구조.클래스명, 패키지 구조.클래스명..." %>
+	예) ArrayList
+	<%@ page import="java.util.ArrayList" %>
+
+<%@ include file="include.jsp" %>
+include : 외부 파일 내용을 현재 파일에 include 할 경우 사용하는 지시자
+file="include 될 파일명.확장자"
+================================================================
+
+내장 객체 : request 객체(외부로부터 전달된 데이터 저장)
+getContextPath() : 웹 어플리케이션의 경로 (ContextPath)
+getMethod() : <form action="" method="get/post"> 전송방식이 get or post 구분
+			: 웹 주소줄을 통해 ~~.jsp?id=aaa&pw=3333 <= get 전송방식
+getSession() : 서버의 임시저장소(session) 객체를 추출할 경우
+getProtocol() : 요청 프로토콜 구분
+getRequestURL() : 요청 URL 추출
+getQueryString() : 쿼리 문자열 추출
+
+getServerName() : 서버 이름 추출
+getSererPort() : 서버 포트번호 추출
+
+getParameter() : 전송된 파라미터명을 이용하여 데이터 추출
+				 주로 <input ~~~ name="파라미터명" />
+				 웹 주소줄에서 직접 전달 : http://localhost:9000/~~~/~~~.jsp?파라미터명=값&파라미터명=값
+=================================================================
+
+* 서블릿
+Servlet 특징
+	동적 웹 어플리케이션 컴포넌트
+	파일명.java -> 파일명.class
+	클라이언트(사용자)의 요청에 의해 동적으로 작동하고, 응답은 html 기반(html / jsp) 의 파일
+	자바의 thread
+	public class Main{
+		public static main(String[] args){ <= 메인 쓰레드
+		}
+	}
+	
+@WebServlet("/test")
+@ : 어노테이션(annotation)
+WebServlet : 어노테이션 클래스
+("/test") : 웹 주소를 통해 요청 시 사용되는 읾
+
+public class Test extends HttpServlet {
+ // HttpServlet 클래스를 상속받아야 서블릿 기능 작동
+}
+
+private static final long serialVersionUID = 1L; => 수정 금지
+
+public HelloWorld() {
+   super(); // 부모클래스의 생성자를 이용하여 초기화
+}
+
+// 요청방식이 get일 경우 자동 호출
+protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	response.getWriter().append("Served at: ").append(request.getContextPath());
+	// HttpServletRequest request : 외부로부터 전송된 데이터 저장
+					  //  request <= jsp 내장 객체
+					  
+	// HttpServletResponse response : 내부 데이터를 외부로 내보낼 때 사용
+					  //   response <= jsp 내장 객체
+}
+	
+// 요청방식이 post일 경우 자동 호출
+protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	doGet(request, response);
+}	
+	
+==========================================================
+
+Java 로 Excel 문서 작성 : jxl.jar (jar 파일은 java 파일에 대한 압축 파일 => 압축을 풀 수 있다)
+ => 통장 거래 내역 / 통신 이력 등
+
+1. 엑셀 파일 작성
+	작성할 엑셀 파일 생성
+	자바 File 클래스의 생성자에게 파일명과 경로를 전달 : java.io.File
+	예) File f = new File("C://경로//파일명.xls");
+	
+	엑셀 파일 작성 : jxl.jar
+	WritableWorkbook wb = Workbook.createWorkbook(File객체);
+	예) WritableWorkbook wb = Workbook.createWorkbook(f);
+	=> wb 객체는 엑셀구조를 보유
+	
+	엑셀 구조 내에 시트(sheet) 생성
+	WritableSheet s1 = WritableWorkbook객체.createSheet("시트명", index);
+	예) WritableSheet s1 = wb.createSheet("test", 0);
+	=> s1은 sheet 구조를 보유
+	
+	값을 입력하기 위한 라벨 작성
+	Label label = new Label(열번호, 행번호, "입력할 내용");
+	
+	시트에 라벨 추가
+	WritableSheet 객체.addCell(Label 객체);
+	예) s1.addCell(label);
+	
+	반드시 close() 자원을 해제 : 저장
+	wb.close();
+	
+2. 엑셀 파일 읽기
+	파일의 경로를 자바의 File 클래스의 생성자에게 전달
+	File f = new File("읽어드릴 파일의 경로와 파일명.확장자")
+	
+	엑셀 파일 객체 생성
+	Workbook wb = Workbook.getWorkbook(File 객체);
+	Sheet s = wb.getSheet(index);
+	
+	Cell c = s.getCell(열번호, 행번호);
+	
+	셀 내용 읽기
+	c.getContent();
+	System.out.print(c.getContents());
+	
+	wb.close();
+	
+	
+	
+	
+	
+	
+	
+	
+					 
+					 
+					 
+					 
+					 
+					 
