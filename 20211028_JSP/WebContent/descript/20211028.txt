@@ -1,37 +1,37 @@
-* À¥ ÇÁ·Î±×·¡¹ÖÀÌ¶õ?
+* ì›¹ í”„ë¡œê·¸ë˜ë°ì´ë€?
 
-1. À¥¾îÇÃ¸®ÄÉÀÌ¼ÇÀ» ±¸ÇöÇÏ´Â ÇàÀ§
-2. À¥¾îÇÃ¸®ÄÉÀÌ¼Ç -> À¥À» ±â¹İÀ¸·Î ÀÛµ¿µÇ´Â ÇÁ·Î±×·¥
-3. À¥ -> 1°³ ÀÌ»óÀÇ »çÀÌÆ®°¡ ¿¬°áµÇ¾î ÀÖ´Â ÀÎÅÍ³İ ¼­ºñ½ºÀÇ ÇÑ°¡Áö ÇüÅÂ
-4. ÀÎÅÍ³İ -> 1°³ ÀÌ»óÀÇ ³×Æ®¿öÅ©°¡ ¿¬°áµÇ¾î ÀÖ´Â ÇüÅÂ
+1. ì›¹ì–´í”Œë¦¬ì¼€ì´ì…˜ì„ êµ¬í˜„í•˜ëŠ” í–‰ìœ„
+2. ì›¹ì–´í”Œë¦¬ì¼€ì´ì…˜ -> ì›¹ì„ ê¸°ë°˜ìœ¼ë¡œ ì‘ë™ë˜ëŠ” í”„ë¡œê·¸ë¨
+3. ì›¹ -> 1ê°œ ì´ìƒì˜ ì‚¬ì´íŠ¸ê°€ ì—°ê²°ë˜ì–´ ìˆëŠ” ì¸í„°ë„· ì„œë¹„ìŠ¤ì˜ í•œê°€ì§€ í˜•íƒœ
+4. ì¸í„°ë„· -> 1ê°œ ì´ìƒì˜ ë„¤íŠ¸ì›Œí¬ê°€ ì—°ê²°ë˜ì–´ ìˆëŠ” í˜•íƒœ
 
-- ÇÁ·ÎÅäÄİ(Protocol) : ³×Æ®¿öÅ© »ó¿¡¼­ ¾à¼ÓÇÑ Åë½Å±Ô¾à(Http, FTP, SMTP, POP, DHCP)
-- IP : ³×Æ®¿öÅ© »ó¿¡¼­ ÄÄÇ»ÅÍ¸¦ ½Äº°ÇÒ ¼ö ÀÖ´Â ÁÖ¼Ò
-- DNS : IPÁÖ¼Ò¸¦ ÀÎ°£ÀÌ ½±°Ô ¿Ü¿ìµµ·Ï ¸ÅÇÎÇÑ ¹®ÀÚ¿­
-- Port : IPÁÖ¼Ò°¡ ÄÄÇ»ÅÍ¸¦ ½Äº°ÇÒ ¼ö ÀÖ°Ô ÇØÁØ´Ù¸é, Port´Â ÇØ´ç ÄÄÇ»ÅÍÀÇ ±¸µ¿µÇ°í ÀÖ´Â ÇÁ·Î±×·¥À» ±¸ºĞÇÒ ¼ö ÀÕ´Â ¹øÈ£
+- í”„ë¡œí† ì½œ(Protocol) : ë„¤íŠ¸ì›Œí¬ ìƒì—ì„œ ì•½ì†í•œ í†µì‹ ê·œì•½(Http, FTP, SMTP, POP, DHCP)
+- IP : ë„¤íŠ¸ì›Œí¬ ìƒì—ì„œ ì»´í“¨í„°ë¥¼ ì‹ë³„í•  ìˆ˜ ìˆëŠ” ì£¼ì†Œ
+- DNS : IPì£¼ì†Œë¥¼ ì¸ê°„ì´ ì‰½ê²Œ ì™¸ìš°ë„ë¡ ë§¤í•‘í•œ ë¬¸ìì—´
+- Port : IPì£¼ì†Œê°€ ì»´í“¨í„°ë¥¼ ì‹ë³„í•  ìˆ˜ ìˆê²Œ í•´ì¤€ë‹¤ë©´, PortëŠ” í•´ë‹¹ ì»´í“¨í„°ì˜ êµ¬ë™ë˜ê³  ìˆëŠ” í”„ë¡œê·¸ë¨ì„ êµ¬ë¶„í•  ìˆ˜ ì‡ëŠ” ë²ˆí˜¸
 
 =================================================================
 
-JavaÀ¥ : JAVAÇÃ·§Æû(J2SE, J2EE, J2ME) Áß¿¡¼­ J2EE¸¦ ÀÌ¿ëÇÑ À¥ÇÁ·Î±×·¡¹Ö
-		J2SE - Standard Edition, ÀÏ¹İ ÀÚ¹Ù °³¹ß, µ¥½ºÅ©Å¾ ¾ÖÇÃ¸®ÄÉÀÌ¼Ç 
-		J2EE - Enterprise Edition, À¥¿ë ÀÚ¹Ù °³¹ß
-		J2ME - Mobile Edition, °ú°Å ºí·¢º£¸® / ±¸ ¾Èµå·ÎÀÌµå
+Javaì›¹ : JAVAí”Œë«í¼(J2SE, J2EE, J2ME) ì¤‘ì—ì„œ J2EEë¥¼ ì´ìš©í•œ ì›¹í”„ë¡œê·¸ë˜ë°
+		J2SE - Standard Edition, ì¼ë°˜ ìë°” ê°œë°œ, ë°ìŠ¤í¬íƒ‘ ì• í”Œë¦¬ì¼€ì´ì…˜ 
+		J2EE - Enterprise Edition, ì›¹ìš© ìë°” ê°œë°œ
+		J2ME - Mobile Edition, ê³¼ê±° ë¸”ë™ë² ë¦¬ / êµ¬ ì•ˆë“œë¡œì´ë“œ
 =================================================================
 
-»ç¿ëÀÚ(À¥ ºê¶ó¿ìÀú) => ¿äÃ» (request) => À¥ ¼­¹ö => À¥ ¾îÇÃ¸®ÄÉÀÌ¼Ç ¼­¹ö => µ¥ÀÌÅÍº£ÀÌ½º
-			  <= ÀÀ´ä (response)<=      <=              <=
+ì‚¬ìš©ì(ì›¹ ë¸Œë¼ìš°ì €) => ìš”ì²­ (request) => ì›¹ ì„œë²„ => ì›¹ ì–´í”Œë¦¬ì¼€ì´ì…˜ ì„œë²„ => ë°ì´í„°ë² ì´ìŠ¤
+			  <= ì‘ë‹µ (response)<=      <=              <=
 
-À¥ ¼­¹ö : Tomcat
-À¥ ¾îÇÃ¸®ÄÉÀÌ¼Ç ¼­¹ö : ÇÁ·ÎÁ§Æ®
-µ¥ÀÌÅÍº£ÀÌ½º ¼­¹ö : ¿À¶óÅ¬
+ì›¹ ì„œë²„ : Tomcat
+ì›¹ ì–´í”Œë¦¬ì¼€ì´ì…˜ ì„œë²„ : í”„ë¡œì íŠ¸
+ë°ì´í„°ë² ì´ìŠ¤ ì„œë²„ : ì˜¤ë¼í´
 
-ÇÁ·ÎÁ§Æ® => µ¥ÀÌÅÍ¸¦ ¿äÃ» => JDBC => ¿À¶óÅ¬
+í”„ë¡œì íŠ¸ => ë°ì´í„°ë¥¼ ìš”ì²­ => JDBC => ì˜¤ë¼í´
 					 java(~~.jar)
-					 : Á¢¼Ó ¹æ¹ı (¿¹¿ÜÃ³¸® ÄÚµå ÇÊ¿ä -> try {} catch(SQLException e){} finally{})
+					 : ì ‘ì† ë°©ë²• (ì˜ˆì™¸ì²˜ë¦¬ ì½”ë“œ í•„ìš” -> try {} catch(SQLException e){} finally{})
 					 Class.forName("~~~"); -> ClassNotFoundException
 					 
 					 [SQLException]
-					 Connection conn = DriverManager.getConnection("Á¢¼ÓURL", "»ç¿ëÀÚ °èÁ¤", "ºñ¹Ğ¹øÈ£");
+					 Connection conn = DriverManager.getConnection("ì ‘ì†URL", "ì‚¬ìš©ì ê³„ì •", "ë¹„ë°€ë²ˆí˜¸");
 					 Statement st = conn.createStatement();
 					 Result rs = st.executeQuery(SQL(select ~));
 					 st.executeUpdate(SQL(insert/update/delete));
@@ -55,145 +55,145 @@ Oracle
 =================================================================
 
 * JSP
-¹®¹ı:
-1. <%@ %> : Áö½ÃÀÚ => ÆäÀÌÁö¿¡ ´ëÇÑ Àü¹İÀûÀÎ ¼³Á¤ page / taglib
-2. <%-- --%> : JSPÀÇ ÁÖ¼®
-3. <%! %> : º¯¼ö / ¸Ş¼­µå ¼±¾ğ
-4. <%= %> : °á°ú°ªÀ» ¿ó ºê¶ó¿ìÀú È­¸é¿¡ ¹Ù·Î Ãâ·Â => º¯¼öÀÇ °ª, °£´ÜÇÑ ¿¬»ê °á°ú °ª, ¸Ş¼­µå ½ÇÇà °á°ú °ª
-5. <% %> : ¿©·¯ ÁÙ¿¡ °ÉÃÄ¼­ ÀÚ¹Ù ÄÚµå ½ÇÇà
-6. ¾×¼Ç ÅÂ±× : JSP¸¦ ¸¶Ä¡ HTML ÅÂ±× ÇüÅÂ·Î »ç¿ëÇÒ °æ¿ì <jsp:action¸í></jsp:action¸í>
+ë¬¸ë²•:
+1. <%@ %> : ì§€ì‹œì => í˜ì´ì§€ì— ëŒ€í•œ ì „ë°˜ì ì¸ ì„¤ì • page / taglib
+2. <%-- --%> : JSPì˜ ì£¼ì„
+3. <%! %> : ë³€ìˆ˜ / ë©”ì„œë“œ ì„ ì–¸
+4. <%= %> : ê²°ê³¼ê°’ì„ ì› ë¸Œë¼ìš°ì € í™”ë©´ì— ë°”ë¡œ ì¶œë ¥ => ë³€ìˆ˜ì˜ ê°’, ê°„ë‹¨í•œ ì—°ì‚° ê²°ê³¼ ê°’, ë©”ì„œë“œ ì‹¤í–‰ ê²°ê³¼ ê°’
+5. <% %> : ì—¬ëŸ¬ ì¤„ì— ê±¸ì³ì„œ ìë°” ì½”ë“œ ì‹¤í–‰
+6. ì•¡ì…˜ íƒœê·¸ : JSPë¥¼ ë§ˆì¹˜ HTML íƒœê·¸ í˜•íƒœë¡œ ì‚¬ìš©í•  ê²½ìš° <jsp:actionëª…></jsp:actionëª…>
 
-- ½ÇÇà °úÁ¤
-ÃÖÃÊ ¿äÃ» ½Ã : À¥ ºê¶ó¿ìÀú request => jsp => java => class => ½ÇÇà °á°ú => À¥ ºê¶ó¿ìÀú¿¡°Ô response
-Àç ¿äÃ» ½Ã : À¥ ºê¶ó¿ìÀú request => jsp => ½ÇÇà °á°ú => À¥ ºê¶ó¿ìÁ¤°Ô response
+- ì‹¤í–‰ ê³¼ì •
+ìµœì´ˆ ìš”ì²­ ì‹œ : ì›¹ ë¸Œë¼ìš°ì € request => jsp => java => class => ì‹¤í–‰ ê²°ê³¼ => ì›¹ ë¸Œë¼ìš°ì €ì—ê²Œ response
+ì¬ ìš”ì²­ ì‹œ : ì›¹ ë¸Œë¼ìš°ì € request => jsp => ì‹¤í–‰ ê²°ê³¼ => ì›¹ ë¸Œë¼ìš°ì •ê²Œ response
 
-- ³»Àå °´Ã¼ 
-ÀÔÃâ·Â : request / response / out
-¼­ºí¸´ °´Ã¼ : page / config
-¼¼¼Ç °´Ã¼ : session
-¿¹¿Ü °´Ã¼ : exception
+- ë‚´ì¥ ê°ì²´ 
+ì…ì¶œë ¥ : request / response / out
+ì„œë¸”ë¦¿ ê°ì²´ : page / config
+ì„¸ì…˜ ê°ì²´ : session
+ì˜ˆì™¸ ê°ì²´ : exception
 
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ %> : À¥ ÆäÀÌÁö ÀüÃ¼¿¡ ´ëÇÑ È¯°æ µîÀ» ¼³Á¤ÇÒ ¶§ »ç¿ë
-page : È¯°æ ¼³Á¤
-language="java" : ÀÌ ÆäÀÌÁö ³»ºÎ¿¡¼­ »ç¿ëµÇ´Â ¾ğ¾î="java"
+<%@ %> : ì›¹ í˜ì´ì§€ ì „ì²´ì— ëŒ€í•œ í™˜ê²½ ë“±ì„ ì„¤ì •í•  ë•Œ ì‚¬ìš©
+page : í™˜ê²½ ì„¤ì •
+language="java" : ì´ í˜ì´ì§€ ë‚´ë¶€ì—ì„œ ì‚¬ìš©ë˜ëŠ” ì–¸ì–´="java"
 contentType="text/html; charset=UTF-8"
- => ÀÌ À¥ÆäÀÌÁö´Â text ±â¹İ html·Î ±¸¼º
- => charset : ÀÎÄÚµù
+ => ì´ ì›¹í˜ì´ì§€ëŠ” text ê¸°ë°˜ htmlë¡œ êµ¬ì„±
+ => charset : ì¸ì½”ë”©
 
 pageEncoding="UTF-8"
- => ÀÌ ÆäÀÌÁö¿¡ ´ëÇÑ ÀÔÃâ·Â ÀÎÄÚµù ¹æ½Ä
+ => ì´ í˜ì´ì§€ì— ëŒ€í•œ ì…ì¶œë ¥ ì¸ì½”ë”© ë°©ì‹
 
-¿ÜºÎ ¶óÀÌºê·¯¸®ÀÇ Å¬·¡½º¸¦ »ç¿ëÇÒ °æ¿ì
-<%@ page import="ÆĞÅ°Áö ±¸Á¶.Å¬·¡½º¸í" %>
-<%@ page import="ÆĞÅ°Áö ±¸Á¶.Å¬·¡½º¸í, ÆĞÅ°Áö ±¸Á¶.Å¬·¡½º¸í..." %>
-	¿¹) ArrayList
+ì™¸ë¶€ ë¼ì´ë¸ŒëŸ¬ë¦¬ì˜ í´ë˜ìŠ¤ë¥¼ ì‚¬ìš©í•  ê²½ìš°
+<%@ page import="íŒ¨í‚¤ì§€ êµ¬ì¡°.í´ë˜ìŠ¤ëª…" %>
+<%@ page import="íŒ¨í‚¤ì§€ êµ¬ì¡°.í´ë˜ìŠ¤ëª…, íŒ¨í‚¤ì§€ êµ¬ì¡°.í´ë˜ìŠ¤ëª…..." %>
+	ì˜ˆ) ArrayList
 	<%@ page import="java.util.ArrayList" %>
 
 <%@ include file="include.jsp" %>
-include : ¿ÜºÎ ÆÄÀÏ ³»¿ëÀ» ÇöÀç ÆÄÀÏ¿¡ include ÇÒ °æ¿ì »ç¿ëÇÏ´Â Áö½ÃÀÚ
-file="include µÉ ÆÄÀÏ¸í.È®ÀåÀÚ"
+include : ì™¸ë¶€ íŒŒì¼ ë‚´ìš©ì„ í˜„ì¬ íŒŒì¼ì— include í•  ê²½ìš° ì‚¬ìš©í•˜ëŠ” ì§€ì‹œì
+file="include ë  íŒŒì¼ëª….í™•ì¥ì"
 ================================================================
 
-³»Àå °´Ã¼ : request °´Ã¼(¿ÜºÎ·ÎºÎÅÍ Àü´ŞµÈ µ¥ÀÌÅÍ ÀúÀå)
-getContextPath() : À¥ ¾îÇÃ¸®ÄÉÀÌ¼ÇÀÇ °æ·Î (ContextPath)
-getMethod() : <form action="" method="get/post"> Àü¼Û¹æ½ÄÀÌ get or post ±¸ºĞ
-			: À¥ ÁÖ¼ÒÁÙÀ» ÅëÇØ ~~.jsp?id=aaa&pw=3333 <= get Àü¼Û¹æ½Ä
-getSession() : ¼­¹öÀÇ ÀÓ½ÃÀúÀå¼Ò(session) °´Ã¼¸¦ ÃßÃâÇÒ °æ¿ì
-getProtocol() : ¿äÃ» ÇÁ·ÎÅäÄİ ±¸ºĞ
-getRequestURL() : ¿äÃ» URL ÃßÃâ
-getQueryString() : Äõ¸® ¹®ÀÚ¿­ ÃßÃâ
+ë‚´ì¥ ê°ì²´ : request ê°ì²´(ì™¸ë¶€ë¡œë¶€í„° ì „ë‹¬ëœ ë°ì´í„° ì €ì¥)
+getContextPath() : ì›¹ ì–´í”Œë¦¬ì¼€ì´ì…˜ì˜ ê²½ë¡œ (ContextPath)
+getMethod() : <form action="" method="get/post"> ì „ì†¡ë°©ì‹ì´ get or post êµ¬ë¶„
+			: ì›¹ ì£¼ì†Œì¤„ì„ í†µí•´ ~~.jsp?id=aaa&pw=3333 <= get ì „ì†¡ë°©ì‹
+getSession() : ì„œë²„ì˜ ì„ì‹œì €ì¥ì†Œ(session) ê°ì²´ë¥¼ ì¶”ì¶œí•  ê²½ìš°
+getProtocol() : ìš”ì²­ í”„ë¡œí† ì½œ êµ¬ë¶„
+getRequestURL() : ìš”ì²­ URL ì¶”ì¶œ
+getQueryString() : ì¿¼ë¦¬ ë¬¸ìì—´ ì¶”ì¶œ
 
-getServerName() : ¼­¹ö ÀÌ¸§ ÃßÃâ
-getSererPort() : ¼­¹ö Æ÷Æ®¹øÈ£ ÃßÃâ
+getServerName() : ì„œë²„ ì´ë¦„ ì¶”ì¶œ
+getSererPort() : ì„œë²„ í¬íŠ¸ë²ˆí˜¸ ì¶”ì¶œ
 
-getParameter() : Àü¼ÛµÈ ÆÄ¶ó¹ÌÅÍ¸íÀ» ÀÌ¿ëÇÏ¿© µ¥ÀÌÅÍ ÃßÃâ
-				 ÁÖ·Î <input ~~~ name="ÆÄ¶ó¹ÌÅÍ¸í" />
-				 À¥ ÁÖ¼ÒÁÙ¿¡¼­ Á÷Á¢ Àü´Ş : http://localhost:9000/~~~/~~~.jsp?ÆÄ¶ó¹ÌÅÍ¸í=°ª&ÆÄ¶ó¹ÌÅÍ¸í=°ª
+getParameter() : ì „ì†¡ëœ íŒŒë¼ë¯¸í„°ëª…ì„ ì´ìš©í•˜ì—¬ ë°ì´í„° ì¶”ì¶œ
+				 ì£¼ë¡œ <input ~~~ name="íŒŒë¼ë¯¸í„°ëª…" />
+				 ì›¹ ì£¼ì†Œì¤„ì—ì„œ ì§ì ‘ ì „ë‹¬ : http://localhost:9000/~~~/~~~.jsp?íŒŒë¼ë¯¸í„°ëª…=ê°’&íŒŒë¼ë¯¸í„°ëª…=ê°’
 =================================================================
 
-* ¼­ºí¸´
-Servlet Æ¯Â¡
-	µ¿Àû À¥ ¾îÇÃ¸®ÄÉÀÌ¼Ç ÄÄÆ÷³ÍÆ®
-	ÆÄÀÏ¸í.java -> ÆÄÀÏ¸í.class
-	Å¬¶óÀÌ¾ğÆ®(»ç¿ëÀÚ)ÀÇ ¿äÃ»¿¡ ÀÇÇØ µ¿ÀûÀ¸·Î ÀÛµ¿ÇÏ°í, ÀÀ´äÀº html ±â¹İ(html / jsp) ÀÇ ÆÄÀÏ
-	ÀÚ¹ÙÀÇ thread
+* ì„œë¸”ë¦¿
+Servlet íŠ¹ì§•
+	ë™ì  ì›¹ ì–´í”Œë¦¬ì¼€ì´ì…˜ ì»´í¬ë„ŒíŠ¸
+	íŒŒì¼ëª….java -> íŒŒì¼ëª….class
+	í´ë¼ì´ì–¸íŠ¸(ì‚¬ìš©ì)ì˜ ìš”ì²­ì— ì˜í•´ ë™ì ìœ¼ë¡œ ì‘ë™í•˜ê³ , ì‘ë‹µì€ html ê¸°ë°˜(html / jsp) ì˜ íŒŒì¼
+	ìë°”ì˜ thread
 	public class Main{
-		public static main(String[] args){ <= ¸ŞÀÎ ¾²·¹µå
+		public static main(String[] args){ <= ë©”ì¸ ì“°ë ˆë“œ
 		}
 	}
 	
 @WebServlet("/test")
-@ : ¾î³ëÅ×ÀÌ¼Ç(annotation)
-WebServlet : ¾î³ëÅ×ÀÌ¼Ç Å¬·¡½º
-("/test") : À¥ ÁÖ¼Ò¸¦ ÅëÇØ ¿äÃ» ½Ã »ç¿ëµÇ´Â ÀÑ
+@ : ì–´ë…¸í…Œì´ì…˜(annotation)
+WebServlet : ì–´ë…¸í…Œì´ì…˜ í´ë˜ìŠ¤
+("/test") : ì›¹ ì£¼ì†Œë¥¼ í†µí•´ ìš”ì²­ ì‹œ ì‚¬ìš©ë˜ëŠ” ì¾
 
 public class Test extends HttpServlet {
- // HttpServlet Å¬·¡½º¸¦ »ó¼Ó¹Ş¾Æ¾ß ¼­ºí¸´ ±â´É ÀÛµ¿
+ // HttpServlet í´ë˜ìŠ¤ë¥¼ ìƒì†ë°›ì•„ì•¼ ì„œë¸”ë¦¿ ê¸°ëŠ¥ ì‘ë™
 }
 
-private static final long serialVersionUID = 1L; => ¼öÁ¤ ±İÁö
+private static final long serialVersionUID = 1L; => ìˆ˜ì • ê¸ˆì§€
 
 public HelloWorld() {
-   super(); // ºÎ¸ğÅ¬·¡½ºÀÇ »ı¼ºÀÚ¸¦ ÀÌ¿ëÇÏ¿© ÃÊ±âÈ­
+   super(); // ë¶€ëª¨í´ë˜ìŠ¤ì˜ ìƒì„±ìë¥¼ ì´ìš©í•˜ì—¬ ì´ˆê¸°í™”
 }
 
-// ¿äÃ»¹æ½ÄÀÌ getÀÏ °æ¿ì ÀÚµ¿ È£Ãâ
+// ìš”ì²­ë°©ì‹ì´ getì¼ ê²½ìš° ìë™ í˜¸ì¶œ
 protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	response.getWriter().append("Served at: ").append(request.getContextPath());
-	// HttpServletRequest request : ¿ÜºÎ·ÎºÎÅÍ Àü¼ÛµÈ µ¥ÀÌÅÍ ÀúÀå
-					  //  request <= jsp ³»Àå °´Ã¼
+	// HttpServletRequest request : ì™¸ë¶€ë¡œë¶€í„° ì „ì†¡ëœ ë°ì´í„° ì €ì¥
+					  //  request <= jsp ë‚´ì¥ ê°ì²´
 					  
-	// HttpServletResponse response : ³»ºÎ µ¥ÀÌÅÍ¸¦ ¿ÜºÎ·Î ³»º¸³¾ ¶§ »ç¿ë
-					  //   response <= jsp ³»Àå °´Ã¼
+	// HttpServletResponse response : ë‚´ë¶€ ë°ì´í„°ë¥¼ ì™¸ë¶€ë¡œ ë‚´ë³´ë‚¼ ë•Œ ì‚¬ìš©
+					  //   response <= jsp ë‚´ì¥ ê°ì²´
 }
 	
-// ¿äÃ»¹æ½ÄÀÌ postÀÏ °æ¿ì ÀÚµ¿ È£Ãâ
+// ìš”ì²­ë°©ì‹ì´ postì¼ ê²½ìš° ìë™ í˜¸ì¶œ
 protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	doGet(request, response);
 }	
 	
 ==========================================================
 
-Java ·Î Excel ¹®¼­ ÀÛ¼º : jxl.jar (jar ÆÄÀÏÀº java ÆÄÀÏ¿¡ ´ëÇÑ ¾ĞÃà ÆÄÀÏ => ¾ĞÃàÀ» Ç® ¼ö ÀÖ´Ù)
- => ÅëÀå °Å·¡ ³»¿ª / Åë½Å ÀÌ·Â µî
+Java ë¡œ Excel ë¬¸ì„œ ì‘ì„± : jxl.jar (jar íŒŒì¼ì€ java íŒŒì¼ì— ëŒ€í•œ ì••ì¶• íŒŒì¼ => ì••ì¶•ì„ í’€ ìˆ˜ ìˆë‹¤)
+ => í†µì¥ ê±°ë˜ ë‚´ì—­ / í†µì‹  ì´ë ¥ ë“±
 
-1. ¿¢¼¿ ÆÄÀÏ ÀÛ¼º
-	ÀÛ¼ºÇÒ ¿¢¼¿ ÆÄÀÏ »ı¼º
-	ÀÚ¹Ù File Å¬·¡½ºÀÇ »ı¼ºÀÚ¿¡°Ô ÆÄÀÏ¸í°ú °æ·Î¸¦ Àü´Ş : java.io.File
-	¿¹) File f = new File("C://°æ·Î//ÆÄÀÏ¸í.xls");
+1. ì—‘ì…€ íŒŒì¼ ì‘ì„±
+	ì‘ì„±í•  ì—‘ì…€ íŒŒì¼ ìƒì„±
+	ìë°” File í´ë˜ìŠ¤ì˜ ìƒì„±ìì—ê²Œ íŒŒì¼ëª…ê³¼ ê²½ë¡œë¥¼ ì „ë‹¬ : java.io.File
+	ì˜ˆ) File f = new File("C://ê²½ë¡œ//íŒŒì¼ëª….xls");
 	
-	¿¢¼¿ ÆÄÀÏ ÀÛ¼º : jxl.jar
-	WritableWorkbook wb = Workbook.createWorkbook(File°´Ã¼);
-	¿¹) WritableWorkbook wb = Workbook.createWorkbook(f);
-	=> wb °´Ã¼´Â ¿¢¼¿±¸Á¶¸¦ º¸À¯
+	ì—‘ì…€ íŒŒì¼ ì‘ì„± : jxl.jar
+	WritableWorkbook wb = Workbook.createWorkbook(Fileê°ì²´);
+	ì˜ˆ) WritableWorkbook wb = Workbook.createWorkbook(f);
+	=> wb ê°ì²´ëŠ” ì—‘ì…€êµ¬ì¡°ë¥¼ ë³´ìœ 
 	
-	¿¢¼¿ ±¸Á¶ ³»¿¡ ½ÃÆ®(sheet) »ı¼º
-	WritableSheet s1 = WritableWorkbook°´Ã¼.createSheet("½ÃÆ®¸í", index);
-	¿¹) WritableSheet s1 = wb.createSheet("test", 0);
-	=> s1Àº sheet ±¸Á¶¸¦ º¸À¯
+	ì—‘ì…€ êµ¬ì¡° ë‚´ì— ì‹œíŠ¸(sheet) ìƒì„±
+	WritableSheet s1 = WritableWorkbookê°ì²´.createSheet("ì‹œíŠ¸ëª…", index);
+	ì˜ˆ) WritableSheet s1 = wb.createSheet("test", 0);
+	=> s1ì€ sheet êµ¬ì¡°ë¥¼ ë³´ìœ 
 	
-	°ªÀ» ÀÔ·ÂÇÏ±â À§ÇÑ ¶óº§ ÀÛ¼º
-	Label label = new Label(¿­¹øÈ£, Çà¹øÈ£, "ÀÔ·ÂÇÒ ³»¿ë");
+	ê°’ì„ ì…ë ¥í•˜ê¸° ìœ„í•œ ë¼ë²¨ ì‘ì„±
+	Label label = new Label(ì—´ë²ˆí˜¸, í–‰ë²ˆí˜¸, "ì…ë ¥í•  ë‚´ìš©");
 	
-	½ÃÆ®¿¡ ¶óº§ Ãß°¡
-	WritableSheet °´Ã¼.addCell(Label °´Ã¼);
-	¿¹) s1.addCell(label);
+	ì‹œíŠ¸ì— ë¼ë²¨ ì¶”ê°€
+	WritableSheet ê°ì²´.addCell(Label ê°ì²´);
+	ì˜ˆ) s1.addCell(label);
 	
-	¹İµå½Ã close() ÀÚ¿øÀ» ÇØÁ¦ : ÀúÀå
+	ë°˜ë“œì‹œ close() ìì›ì„ í•´ì œ : ì €ì¥
 	wb.close();
 	
-2. ¿¢¼¿ ÆÄÀÏ ÀĞ±â
-	ÆÄÀÏÀÇ °æ·Î¸¦ ÀÚ¹ÙÀÇ File Å¬·¡½ºÀÇ »ı¼ºÀÚ¿¡°Ô Àü´Ş
-	File f = new File("ÀĞ¾îµå¸± ÆÄÀÏÀÇ °æ·Î¿Í ÆÄÀÏ¸í.È®ÀåÀÚ")
+2. ì—‘ì…€ íŒŒì¼ ì½ê¸°
+	íŒŒì¼ì˜ ê²½ë¡œë¥¼ ìë°”ì˜ File í´ë˜ìŠ¤ì˜ ìƒì„±ìì—ê²Œ ì „ë‹¬
+	File f = new File("ì½ì–´ë“œë¦´ íŒŒì¼ì˜ ê²½ë¡œì™€ íŒŒì¼ëª….í™•ì¥ì")
 	
-	¿¢¼¿ ÆÄÀÏ °´Ã¼ »ı¼º
-	Workbook wb = Workbook.getWorkbook(File °´Ã¼);
+	ì—‘ì…€ íŒŒì¼ ê°ì²´ ìƒì„±
+	Workbook wb = Workbook.getWorkbook(File ê°ì²´);
 	Sheet s = wb.getSheet(index);
 	
-	Cell c = s.getCell(¿­¹øÈ£, Çà¹øÈ£);
+	Cell c = s.getCell(ì—´ë²ˆí˜¸, í–‰ë²ˆí˜¸);
 	
-	¼¿ ³»¿ë ÀĞ±â
+	ì…€ ë‚´ìš© ì½ê¸°
 	c.getContent();
 	System.out.print(c.getContents());
 	

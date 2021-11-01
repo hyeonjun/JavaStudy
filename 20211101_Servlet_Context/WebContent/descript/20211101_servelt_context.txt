@@ -1,0 +1,77 @@
+데이터 공유 : ServletContext
+	여러 Servlet에서 공통적으로 사용할 데이터를 공유할 경우,
+	context parameter를 이용하여 web.xml 문서에 작성
+
+	<context-param>
+		<param-name>공유 파라미터 이름</param-name>
+		<param-value>공유 값</param-value>
+	</context-param>
+
+공유 데이터 추출 : context 영역 데이터
+	String 변수 = getServletContext().getInitParameter("공유 파라미터 명");
+	
+
+*** WEB-INF 폴더 내부는 외부에서 접근 못하도록 차단된 폴더
+	web.xml
+	~~~.jsp / ~~~.html 파일들은 반드시 WebContent 영역에 존재해야한다.
+	
+	<학습>
+	WebContent => index.html
+	WebContent/html => html 파일들
+	WebContent/js => js 파일들
+	WebContent/jsp => jsp 파일들
+	WebContent/css => css 파일들
+	
+	<실무>
+	WebContent/member/html
+	WebContent/member/js
+	WebContent/member/jsp
+	WebContent/member/css
+	
+	WebContent/order/html	
+	WebContent/order/js
+	WebContent/order/jsp
+	WebContent/order/css
+	
+	WebContent/notice/html	
+	WebContent/notice/js
+	WebContent/notice/jsp
+	WebContent/notice/css
+	
+	=> Tomcat도 여러 개
+
+jsp or Servlet으로 바로 이동 : response.sendRedirect()
+	response.sendRedirect("page.jsp?no=1&search=spring");
+	
+	response.sendRedirect() 사용 시 주의사항
+	 - reponse.sendRedirect()를 기준을 위, 아래에는 화면 출력 코드를 사용하지 않는다.
+	 이유 : response.sendRedirect()를 만나면 해당 페이지로 바로 이동하기 때문
+
+* 액션 태그 : JSP 페이지 내에서 어떤 동작을 하도록 지시하는 내장 태그
+		다른 페이지로 이동 / 다른 페이지를 내장
+		- 자바 코드를 HTML 태그 사용할 경우
+			JSTL : 별도의 라이브러리가 필요 <%@ taglib ~~ %>
+	
+1. forward
+	<jsp:forwar page="이동할 페이지(~~~.jsp)" />
+
+2. include
+	<jsp:include page="내장(삽입)할 페이지(~~~.jsp)" flush="true" />
+
+3. param: forward / include 태그 내에서 전달할 값을 설정할 때 사용
+	<jsp:forward page="이동할 페이지(~~~.jsp)" >
+		<jsp:param name="파라미터명" value="전달값" />
+	</jsp:forward>
+	
+	
+	<jsp:include page="내장(삽입)할 페이지(~~~.jsp)" flush="true" >
+		<jsp:param name="파라미터명" value="전달값" />
+	</jsp:include>
+	
+	
+	
+	
+	
+	
+	
+	
